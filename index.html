@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Productivity Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Productivity Dashboard</h1>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- To-Do List Section -->
+    <section class="todo">
+      <h2>To-Do List</h2>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task" required>
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todo-list">
+        <!-- Tasks will be added here dynamically -->
+      </ul>
+    </section>
+
+    <!-- Calendar View Section -->
+    <section class="calendar">
+      <h2>Calendar</h2>
+      <div class="calendar-controls">
+        <button id="prev-month">⬅️</button>
+        <h3 id="current-month-year">Month Year</h3>
+        <button id="next-month">➡️</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid">
+        <!-- Calendar days and dates will be populated dynamically -->
+      </div>
+      <div id="progress-input-section" style="display: none;">
+        <h3>Add Progress for Selected Date</h3>
+        <input type="number" id="daily-progress" placeholder="Enter progress (0-100)" min="0" max="100">
+        <button id="save-progress">Save Progress</button>
+      </div>
+    </section>
+
+    <!-- Progress Bars Section -->
+    <section class="progress">
+      <h2>Progress</h2>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-1" style="width: 70%;">70%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-2" style="width: 40%;">40%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-3" style="width: 90%;">90%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="overall-progress" style="width: 0%;">0%</div>
+      </div>
+      <button id="update-progress">Update Progress</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
