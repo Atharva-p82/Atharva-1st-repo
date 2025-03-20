@@ -1,3 +1,3 @@
-This is Atharva's repo
-this is edited in vs code 
-the files modified are signed through "M" 
+This is Atharva's repo\n
+this is edited in vs code\n 
+the files modified are signed through "M"\n 
